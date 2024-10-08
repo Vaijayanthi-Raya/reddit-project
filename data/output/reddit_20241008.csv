@@ -1,0 +1,198 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1fyckga,Working as a Data engineer,"People who work as a data engineer
+
+What are the daily tasks / functions that you do in your job
+
+how much do you code or do you use  low code tools
+
+do you do guards as the backend developers?",49,22,eberrones_,2024-10-07 16:56:34,https://www.reddit.com/r/dataengineering/comments/1fyckga/working_as_a_data_engineer/,False,False,False,False
+1fy2f7q,Is there a trend to skip the warehouse and build on lakehouse/data lake instead?,Curious where you see the traditional warehouse in a modern platform. Is it a thing of the past or does it still have a place? Can lakehouse/data lake fill its role?,42,44,loudandclear11,2024-10-07 07:58:57,https://www.reddit.com/r/dataengineering/comments/1fy2f7q/is_there_a_trend_to_skip_the_warehouse_and_build/,False,False,False,False
+1fy70ae,Is there any benefit to building scrapers in a non-“data engineering” language? ,"Hi everyone,
+
+Been building a scraper to collect millions of historic responses from an old API in Python, but due to the so-so support for concurrency and the need to get dozens of endpoints, the whole thing is SO slow. I know Python is the best language for big data, transformation, interfacing with SQL/databases, etc (and it’s my favorite language to write in), but is there any merit to using another language to build the “E” phase of the ETL/ELT process in certain cases? Something like Go, Scala, etc? Or is this just an issue with my code and Python should be good in 99% of every case? ",11,27,Butterhero_,2024-10-07 12:59:43,https://www.reddit.com/r/dataengineering/comments/1fy70ae/is_there_any_benefit_to_building_scrapers_in_a/,False,False,False,False
+1fyi1yx,Thoughts on AI generated code?,"I feel the current crop of hot AI tools are highly front-end or full stack oriented. I do use chatbots for coding help with mixed results. 
+
+But I do like the fact that AI can easily generate a lot of boilerplate code. ",10,20,gymbar19,2024-10-07 20:41:47,https://www.reddit.com/r/dataengineering/comments/1fyi1yx/thoughts_on_ai_generated_code/,False,False,False,False
+1fy0y3t,Are you archiving your data or don't care ?,"Are you archiving your data in your DB/DWH ? 
+
+If so, how ?
+
+**And the biggest question**, how much does it save you a month ?
+
+  
+I'm trying to get some more understanding of this world - some are using long term storage like in GCP BigQuery, S3 Glacier, and so on. 
+
+Do you think archiving is a big deal ? or there's no really need ? ",6,5,RazCoDev,2024-10-07 06:07:34,https://www.reddit.com/r/dataengineering/comments/1fy0y3t/are_you_archiving_your_data_or_dont_care/,False,False,False,False
+1fyjkyo,Introducing Splicing: An Open-Source AI Copilot for Effortless Data Engineering Pipeline Building,"We are thrilled to introduce [Splicing](https://splicing-ai.github.io/splicing/), an open-source project designed to make data engineering pipeline building effortless through conversational AI. Below are some of the features we want to highlight:
+
+* **Notebook-Style Interface with Chat Capabilities**: Splicing offers a familiar Jupyter notebook environment, enhanced with AI chat capabilities. This means you can build, execute, and debug your data pipelines interactively, with guidance from our AI copilot.
+* **No Vendor Lock-In**: We believe in freedom of choice. With Splicing, you can build your pipelines using any data stack you prefer, and choose the language model that best suits your needs.
+* **Fully Customizable**: Break down your pipeline into multiple components—data movement, transformation, and more. Tailor each component to your specific requirements and let Splicing seamlessly assemble them into a complete, functional pipeline.
+* **Secure and Manageable**: Host Splicing on your own infrastructure to keep full control over your data. Your data and secret keys stay yours and are never shared with language model providers.
+
+We built Splicing with the intention to empower data engineers by reducing complexity in building data pipelines. It is still in its early stages, and we're eager to get your feedback and suggestions! We would love to hear about how we can make this tool more useful and what types of features we should prioritize. Check out our [GitHub repo](https://github.com/splicing-ai/splicing) and join our [community on Discord](https://discord.com/invite/C7h5cqvjdb).",6,0,Away-Violinist3104,2024-10-07 21:44:51,https://www.reddit.com/r/dataengineering/comments/1fyjkyo/introducing_splicing_an_opensource_ai_copilot_for/,False,False,False,False
+1fycrr8,Does this Arch makes sense? ,"First some context:
+
+- big company but very primitive in terms of technology, no teams on cloud, etc
+- infra and devops team (new team) is not being super helpful 
+- legacy “warehouse” is around 20Tb, working with stored proc and had a mess
+- im in charge of building the new team and migrate the processes in the future
+- Still wasn’t able to understand our daily ingestion volume as nobody knows
+- I have just 1 jr and maybe a ssr in the future 
+- we might want to do Ml and data science 
+- batch data from onprem DBs and some APIs 
+- company have onprem hardware but they are not helpful to grant permissions (i need to ask infra to even install an ibuntu package) 
+
+Now, as there are many unknowns and the team is not professional at all I would choose something low effort at least to kickstart it like airbyte / stich / fivetran -> iceberg - dbt trino -> iceberg —> …
+
+This looks good and flexible enough so we maybe can add spark later if we need it for Ml or something else, and this will run ok on our onprem servers (which are pretty powerful) BUT it will take ages to configure all this, especially when we are not allowed to even run sudo in the servers and the devops team is not super helpful.
+
+So, my proposal would be, do all this in cloud, fivetran s3 with iceberg catalog, and dbt with athena while we work with out team to deploy and configure locally in case the AWS expenses gets too high (and if not we can stay there) 
+
+Ia there something I might be not seeing? Of course scheduler is not being analyzed but considered, this is just a section of the arch 
+
+Btw i love spark and databricks, but can’t justify to use it for this small amount of data and don’t want to introduce a dependece on spark if not needed ",3,11,Obvious-Phrase-657,2024-10-07 17:04:57,https://www.reddit.com/r/dataengineering/comments/1fycrr8/does_this_arch_makes_sense/,False,False,False,False
+1fxyhm5,Is this an ok activity diagram?,"https://preview.redd.it/ztj92q2z69td1.png?width=1388&format=png&auto=webp&s=b38f5b13962ca65224907ab8698f555bd054e5f0
+
+It's for a class that I am struggling in and I would like some honest feedback if possible",5,2,Rob0t_Wizard,2024-10-07 03:28:19,https://www.reddit.com/r/dataengineering/comments/1fxyhm5/is_this_an_ok_activity_diagram/,False,False,False,False
+1fxx9ap,"Hi there, wanna to learn about DE, need some advice regarding my project","hi there, im currently working on webscraping data at my workplace as a DA and am thinking into designing the data pipeline and possibly automating it as my project seeing im only doing webscraping and data cleaning for the past 2-3 months now, here is what i am currently doing manually:
+
+1. webscraping data from website using python scripts (beautifulsoup,requests,json) or power automate desktop into a csv file, and will scrape either daily or once a week depending on the requirement
+2. afterwards i webscrape from 4 different websites using the same method
+3. then the csv files created are merged into one master csv file per each website after certain conditions are met e.g. once every 2-4k rows of data are scraped, ill merge into the master file
+4. the files will undergo data cleaning and transformation, and finally load into visualisation tools like power bi to make a report dashboard (we're mostly doing data cleaning and transforming, since the report dashboard hasnt been needing as of now, im just doing rough draft of the dashboard on my own)
+
+and ive been asking from chatgpt on how i can turn this into a data pipeline and this is the short answer:
+
+# Pipeline Architecture Diagram:
+
+1. **Extract (Web Scraping)**:
+   * Tools: Python (Scrapy, Selenium, Requests) or Cloud Functions
+   * Scheduler: Apache Airflow or Prefect
+   * Frequency: Daily/Weekly Scraping
+   * Storage: Cloud Storage (AWS S3, GCS, etc.)
+2. **Transform (Data Cleaning/Integration)**:
+   * Tools: Python (Pandas, PySpark), dbt for transformations
+   * Storage: PostgreSQL/MySQL/NoSQL (MongoDB, DynamoDB)
+   * Orchestration: Airflow/Prefect
+3. **Load (BI Tool Integration)**:
+   * Tools: Direct Database Connection (Power BI) or Cloud Data Warehouses (BigQuery/Redshift)
+   * Scheduled Data Refresh: Power BI API or direct connection
+4. **Monitoring and Alerts**:
+   * Tools: Airflow UI, CloudWatch, Logging Libraries, Email/Slack Alerts
+
+# Suggested Technologies:
+
+* **Orchestrators**: Apache Airflow, Prefect
+* **ETL Tools**: Scrapy, dbt, Pandas, PySpark
+* **Storage**: AWS S3, Google Cloud Storage, PostgreSQL/MySQL, MongoDB/DynamoDB (NoSQL)
+* **BI**: Power BI (connected to database/warehouse)
+* **Monitoring**: Airflow UI, CloudWatch/Stackdriver
+
+im more of a beginner so from the list is this a good idea of a start? what else that i need to learn about",6,0,zhivix,2024-10-07 02:21:26,https://www.reddit.com/r/dataengineering/comments/1fxx9ap/hi_there_wanna_to_learn_about_de_need_some_advice/,False,False,False,False
+1fyirct,Switch from parquet to deltalake,"hi, 
+
+I m currently saving all my data using parquet files partitioned by month. I mean I have one parquet for each month.  ( 2024-01-01.parquet, 2024-02-01.parquet ) .
+I can query my data very efficiently with duckdb as follow : 
+
+select col from *.parquet
+
+It works well. But I wonder if there is advantages to switch to delta lake. Can I have this kind of monthly partition? Can I query like with parquet files? ",3,4,TargetDangerous2216,2024-10-07 21:10:40,https://www.reddit.com/r/dataengineering/comments/1fyirct/switch_from_parquet_to_deltalake/,False,False,False,False
+1fydg0o,I want to learn azure ,"Hey everybody I wanna learn azure. But I have exhausted my free trial. Now I am thinking of learning through pay as you go. But the question is, is it very expensive learning through pay as you go?",5,17,__jaff__,2024-10-07 17:32:24,https://www.reddit.com/r/dataengineering/comments/1fydg0o/i_want_to_learn_azure/,False,False,False,False
+1fy7894,The Skill-Set to Master Your Data PM Role | A Practicing Data PM's Guide,,3,0,growth_man,2024-10-07 13:10:00,https://moderndata101.substack.com/p/the-skill-set-to-master-your-data,False,False,False,False
+1fy1aum,Easiest way to Process millions of excel files and dump them into snowflake table ,"I need to process these using snowpark as of now (it is terribly slow) . Is it faster with lambda ? Any help is appreciated 
+
+Thanks :) 🙏 
+
+Edit : 
+
+
+I need to open the excel file , fetch column names from line no 6 , and data from line from 9 till line number ‘n’ and insert them into the snowflake table 
+
+I tried this code with snowpark but it is terribly slow like processing around just 300 files a hour , this is not scalable or feasible ",4,6,boss-mannn,2024-10-07 06:33:24,https://www.reddit.com/r/dataengineering/comments/1fy1aum/easiest_way_to_process_millions_of_excel_files/,False,False,False,False
+1fylxrm,How to know if Databricks is correct solution for my project,"We are a big data engineering team processing financial data. We currently have S3 as HDFS and use pyspark on AWS EKS to process the data. Recently our management has reached out to technical team to know if Databricks is going to be helpful with respect to performance and/or data management etc.
+
+So I’m curious how to assess this? Is Databricks a default solution for all cloud based spark transformation projects or is there anything else to consider.
+
+Also I’m wondering what’s the effect on cost going to be as we are currently testing stuff on local
+
+Would love to see insights from people who have experienced the transition ",4,7,PhotographMobile5350,2024-10-07 23:31:10,https://www.reddit.com/r/dataengineering/comments/1fylxrm/how_to_know_if_databricks_is_correct_solution_for/,False,False,False,False
+1fydmaw,7 Data Engineering Tools for Beginners,,4,0,kingabzpro,2024-10-07 17:39:41,https://www.kdnuggets.com/7-data-engineering-tools-for-beginners,False,False,False,False
+1fyb8ra,Staying up-to-date with the industry,"Hi, how do you guys stay up-to-date with the industry? any suggestion on what to do, what to read, etc?",2,1,itsawesomedude,2024-10-07 16:01:42,https://www.reddit.com/r/dataengineering/comments/1fyb8ra/staying_uptodate_with_the_industry/,False,False,False,False
+1fy9ja0,Best Features Selection Algorithms,"I've been tasked this week with conducting market research on the best feature selection algorithms. We are currently using BorutaSHAP, but I would like to explore whether there is a better algorithm available, as BorutaSHAP has been around for 4-5 years.",3,2,chrmux,2024-10-07 14:51:37,https://www.reddit.com/r/dataengineering/comments/1fy9ja0/best_features_selection_algorithms/,False,False,False,False
+1fy6g2u,NanoCube - Lightning fast OLAP-style point queries on Pandas DataFrames,"Maybe this is also of interest for the data engineering community. Enjoy...
+
+[https://github.com/Zeutschler/nanocube](https://github.com/Zeutschler/nanocube)
+
+[https://www.reddit.com/r/Python/comments/1fxgkj6/python\_is\_awesome\_speed\_up\_pandas\_point\_queries](https://www.reddit.com/r/Python/comments/1fxgkj6/python_is_awesome_speed_up_pandas_point_queries)
+
+https://preview.redd.it/v1j5scjhvbtd1.png?width=640&format=png&auto=webp&s=9cdb96ea5797d9f17a2ba469c65584ddccdbcfb9
+
+",3,0,Psychological-Motor6,2024-10-07 12:31:02,https://www.reddit.com/r/dataengineering/comments/1fy6g2u/nanocube_lightning_fast_olapstyle_point_queries/,False,False,False,False
+1fy5qbg,"How to Access Data Without Burdening Small Teams? Need Advice!
+
+","Hey data engineers,
+
+I’m a marketing freelancer and often struggle to get the data I need because I only know basic SQL, and the small data teams I work with are usually too busy to help. This leaves me feeling blocked and unable to do my job effectively.
+
+I’d love to hear how you handle situations where non-technical teams need access to data but can’t rely on the data engineers. Are there processes or tools you use to lighten this load?",3,6,MatthiasMayer,2024-10-07 11:52:34,https://www.reddit.com/r/dataengineering/comments/1fy5qbg/how_to_access_data_without_burdening_small_teams/,False,False,False,False
+1fy3loh,"Data Visualisation Tools: Superset, Metabase, Redash, Evidence, Blazer","*Processing img 6p82i7amxatd1...*
+
+  
+I've recently onboarded Superset, Metabase, Redash, Evidence and Blazer into my open-source tool insta-infra (https://github.com/data-catering/insta-infra) so you can easily check out and see what these tools are like.
+
+Evidence seemed to be simplest in terms of running as you just need a volume mount (no data persisted to a database). Superset is a bit more involved because it requires both Postgres and Redis (not sure if Redis is optional now but at my previous workplace we deployed without it). Superset, Metabase, Redash and Blazer all required Postgres as a backend.
+
+[https://github.com/data-catering/insta-infra](https://github.com/data-catering/insta-infra)
+
+",5,0,Pitah7,2024-10-07 09:30:11,https://www.reddit.com/r/dataengineering/comments/1fy3loh/data_visualisation_tools_superset_metabase_redash/,False,False,False,False
+1fyls1l,When/Why should I use federated queries instead of CDC or event sourcing?,"I’m working on building a data lake in BigQuery and exploring different ways to bring data from various sources, including an AWS database. I know about using **Federated Queries** for accessing external data directly in BigQuery, but I’m curious about when this approach is actually recommended. Normally i just use python/scheduled jobs, third party applications(dms/datastream), event sourcing to load the data to a bucket and then transform it.  
+Are there specific scenarios or advantages where Federated Queries are clearly better? apart from the obvious of not having to pay for storage, i dont see when should i use external tables.",2,1,nueva_student,2024-10-07 23:23:51,https://www.reddit.com/r/dataengineering/comments/1fyls1l/whenwhy_should_i_use_federated_queries_instead_of/,False,False,False,False
+1fy42hv,Conformed datamodel dependencies,"My team currently uses the conformed datamodel a la Kimball. This means that are dimensions are shared across different fact tables, which creates dependencies. If one of the jobs updating the data in a dimension fails overnight it could potentially break a lot of star models. Therefore we introduced an additional step where we check if all jobs have succeeded. If so we load all the data to the presentation layer.
+
+  
+Is this a common strategy for working with a conformed datamodel? We are looking into different solutions to limit the dependencies. Preferably we don't want this extra layer.",2,1,Superb-Occasion2501,2024-10-07 10:04:48,https://www.reddit.com/r/dataengineering/comments/1fy42hv/conformed_datamodel_dependencies/,False,False,False,False
+1fyad5j,How are DevOps & DataOps teams uniting for more integrated & scalable data pipeline management? 🤔,"That’s the question on seemingly everyone’s minds in the data, database, and DevOps worlds – but what’s the real solution?
+
+Our expanding data journeys and growing AI/ML workloads are not only straining existing database change management workflows. They’re throwing wrenches into historically streamlined processes and ending up with downstream issues due to misaligned workflows, siloed data/database/DevOps teams, and a lack of standardization. 
+
+Discover the path to integrated automation for scalable data management in an AI/ML world. Dan Zentgraf – Product Manager for Liquibase’s Database DevOps platform and organizer of DevOpsDays Austin for 11+ years, with 25+ years of DevOps experience – invites you to join him for a live webinar and Q&A, *From DevOps to DataOps*. 
+
+Join us: 📅 Thurs, Oct 24th | 🕒 11:00 AM CT
+
+🔗 [Register](https://hubs.li/Q02RS_xN0)",1,1,liquibase,2024-10-07 15:26:00,https://www.reddit.com/r/dataengineering/comments/1fyad5j/how_are_devops_dataops_teams_uniting_for_more/,False,False,False,False
+1fyl20s,Review of hiring process  at Avanade for DE consultant,"I am interested in applying for a DE position at Avanade. I was wondering if anyone has any insights about how the hiring process goes.
+
+The job description focusses mainly on:
+
+1.  Experience in working with the latest Azure technologies, such as; Databricks, Synapse, Data Factory, Azure Data Lake Storage (Gen 2), Cosmos DB 
+
+2. Understanding of software engineering tools and concepts including experience in Python, Scala or PySpark
+
+I would like to know how many rounds do they typically do as well as how should a candidate prepare for each round.",0,0,Equivalent_Tough_651,2024-10-07 22:50:13,https://www.reddit.com/r/dataengineering/comments/1fyl20s/review_of_hiring_process_at_avanade_for_de/,False,False,False,False
+1fye64a,Projects Involving Databricks out of Boredom,Pretty much title. Was wondering if there was a good suggestion for better databricks learning on project suggestions to be done in boredom. Really guess I am shooting into the void here for suggestions.,0,4,EvilDrCoconut,2024-10-07 18:01:52,https://www.reddit.com/r/dataengineering/comments/1fye64a/projects_involving_databricks_out_of_boredom/,False,False,False,False
+1fya0s8,Databricks AI/BI dashboards — why?,"If you haven’t seen, Databricks have released an updated version of their AI/BI dashboards that can now be embedded in other platforms like Salesforce & viewed by business users.
+
+Struggling to see why or how this is better than a Looker dashboard embed, though? If anyone has a fresh perspective, keen to understand why.",0,6,Old-Practice-4271,2024-10-07 15:11:40,https://www.reddit.com/r/dataengineering/comments/1fya0s8/databricks_aibi_dashboards_why/,False,False,False,False
+1fy19nb,New grad looking for opportunities to in data engineering ,"Hi all, I’m a new grad with masters in computer engineering (data science specialisation) and have an experience of 1 year in software development. Currently looking to start my career as data engineer, any advice on how to stand out in the current job market. Thank you ",0,3,Remarkable-Corner-22,2024-10-07 06:30:57,https://www.reddit.com/r/dataengineering/comments/1fy19nb/new_grad_looking_for_opportunities_to_in_data/,False,False,False,False
+1fy22wa,Which MacBook Should I Choose for Data Engineering: MacBook Air vs MacBook Pro?,"Hi everyone,
+
+I’m looking to buy a new (2nd) laptop, and I’m torn between two MacBook models (I do have a work laptop, but I am looking for a new personal laptop to do some side jobs). My work involves Python programming, SQL, AWS, and sometimes heavier data processing tasks. Here are the specs of the models I’m considering:
+
+**1. MacBook Air (2023):**
+
+* Screen: 13.6 inch
+* Processor: Apple M3 chip
+* RAM: 16 GB
+* Storage: 512 GB SSD
+
+**2. MacBook Pro (2023):**
+
+* Screen: 14.2 inch
+* Processor: Apple M3 chip
+* RAM: 8 GB
+* Storage: 512 GB SSD
+
+The MacBook Air is a bit cheaper (around 200 euro) and comes with 16 GB of RAM, which seems appealing. However, I’m unsure if the MacBook Pro would offer better performance despite having only 8 GB of RAM and the overall Pro performance. Which one would you recommend for data engineering tasks like running multiple venv's, cloud integrations, and some analytics and ML workloads? 
+
+Thanks in advance for your advice!",0,7,youn-gmoney,2024-10-07 07:32:02,https://www.reddit.com/r/dataengineering/comments/1fy22wa/which_macbook_should_i_choose_for_data/,False,False,False,False
