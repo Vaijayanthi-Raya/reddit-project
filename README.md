@@ -1,6 +1,3 @@
-# reddit-project
-This is a Data Engineering Project
-
 # Reddit Data ETL Pipeline Project
 
 For this project, I utilized Docker to set up and maintain an infrastructure consisting of **Apache Airflow**, **Celery**, **PostgreSQL**, and **Redis**. This containerized approach facilitated the orchestration of workflows and ensured a consistent environment for the various components involved in the ETL process.
