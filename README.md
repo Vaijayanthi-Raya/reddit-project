@@ -79,5 +79,5 @@ For this project, I utilized Docker to set up and maintain an infrastructure con
 - **Reporting**: Generating reports or dashboards for stakeholders interested in insights from the data engineering subreddit.
 
 ## Conclusion
-Overall, this project aims to automate the process of collecting, transforming, and preparing Reddit data for analysis, leveraging modern data engineering tools and practices. By utilizing Docker, **AWS Glue**, **Athena**, and **Redshift**, I have created a robust ETL pipeline that not only extracts and processes data but also facilitates in-depth analysis and visualization. If you have specific questions about certain aspects of the project or need assistance with any modifications, feel free to ask!
+Overall, this project aims to automate the process of collecting, transforming, and preparing Reddit data for analysis, leveraging modern data engineering tools and practices. By utilizing Docker, **AWS Glue**, **Athena**, and **Redshift**, I have created a robust ETL pipeline that not only extracts and processes data but also facilitates in-depth analysis and visualization. 
 
